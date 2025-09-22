@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bliss - Premium Coffee Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">☕</div>
+                <span class="logo-text">Brew & Bliss</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#reservation" class="btn-reserve">Reserve Table</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>Freshly Roasted Daily</span>
+                </div>
+                <h1 class="hero-title">
+                    Where Every Cup Tells a 
+                    <span class="title-script">Story</span>
+                </h1>
+                <p class="hero-description">
+                    Experience the perfect blend of artisanal coffee, cozy atmosphere, and warm hospitality. 
+                    From single-origin beans to handcrafted pastries, every moment here is crafted with love.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn-primary">
+                        <span>Explore Menu</span>
+                        <span class="btn-icon">→</span>
+                    </a>
+                    <a href="#reservation" class="btn-secondary">
+                        <span class="btn-icon">📍</span>
+                        <span>Visit Us</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Coffee Varieties</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9★</span>
+                        <span class="stat-label">Rating</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="coffee-cup">
+                    <div class="cup-steam"></div>
+                    <div class="cup-steam"></div>
+                    <div class="cup-steam"></div>
+                </div>
+                <div class="floating-beans">
+                    <div class="bean bean-1">☕</div>
+                    <div class="bean bean-2">☕</div>
+                    <div class="bean bean-3">☕</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section class="menu-preview" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>☕ Our Specialties</span>
+                </div>
+                <h2 class="section-title">Crafted with Passion</h2>
+                <p class="section-subtitle">Each cup is a masterpiece, each bite a moment of joy</p>
+            </div>
+
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="coffee">Coffee</button>
+                <button class="category-btn" data-category="pastries">Pastries</button>
+                <button class="category-btn" data-category="breakfast">Breakfast</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Coffee Items -->
+                <div class="menu-item coffee active" data-category="coffee">
+                    <div class="menu-image">
+                        <img src="assets/images/specialities/1.png" alt="Cafe Speciality" class="menu-img">
+                        <div class="menu-overlay">
+                            <button class="quick-order">Quick Order</button>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3 class="menu-name">Signature Espresso</h3>
+                            <span class="menu-price">$4.50</span>
+                        </div>
+                        <p class="menu-description">Rich, bold espresso with notes of dark chocolate and caramel</p>
+                        <div class="menu-tags">
+                            <span class="tag">Popular</span>
+                            <span class="tag">Strong</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item coffee active" data-category="coffee">
+                    <div class="menu-image">
+                        <img src="assets/images/specialities/2.png" alt="Cafe Speciality" class="menu-img">
+                        <div class="menu-overlay">
+                            <button class="quick-order">Quick Order</button>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3 class="menu-name">Vanilla Latte</h3>
+                            <span class="menu-price">$5.25</span>
+                        </div>
+                        <p class="menu-description">Smooth espresso with steamed milk and Madagascar vanilla</p>
+                        <div class="menu-tags">
+                            <span class="tag">Bestseller</span>
+                            <span class="tag">Sweet</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item coffee active" data-category="coffee">
+                    <div class="menu-image">
+                        <img src="assets/images/specialities/3.png" alt="Cafe Speciality" class="menu-img">
+                        <div class="menu-overlay">
+                            <button class="quick-order">Quick Order</button>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3 class="menu-name">Mocha Delight</h3>
+                            <span class="menu-price">$5.75</span>
+                        </div>
+                        <p class="menu-description">Perfect harmony of espresso, chocolate, and whipped cream</p>
+                        <div class="menu-tags">
+                            <span class="tag">Indulgent</span>
+                            <span class="tag">Chocolate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pastry Items -->
+                <div class="menu-item pastries" data-category="pastries">
+                    <div class="menu-image">
+                        <img src="assets/images/specialities/4.png" alt="Cafe Speciality" class="menu-img">
+                        <div class="menu-overlay">
+                            <button class="quick-order">Quick Order</button>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3 class="menu-name">Butter Croissant</h3>
+                            <span class="menu-price">$3.50</span>
+                        </div>
+                        <p class="menu-description">Flaky, buttery croissant baked fresh every morning</p>
+                        <div class="menu-tags">
+                            <span class="tag">Fresh</span>
+                            <span class="tag">Classic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item pastries" data-category="pastries">
+                    <div class="menu-image">
+                        <img src="assets/images/specialities/5.png" alt="Cafe Speciality" class="menu-img">
+                        <div class="menu-overlay">
+                            <button class="quick-order">Quick Order</button>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3 class="menu-name">Blueberry Muffin</h3>
+                            <span class="menu-price">$4.25</span>
+                        </div>
+                        <p class="menu-description">Moist muffin loaded with fresh Maine blueberries</p>
+                        <div class="menu-tags">
+                            <span class="tag">Fruit</span>
+                            <span class="tag">Healthy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item pastries" data-category="pastries">
+                    <div class="menu-image">
+                        <img src="assets/images/specialities/6.png" alt="Cafe Speciality" class="menu-img">
+                        <div class="menu-overlay">
+                            <button class="quick-order">Quick Order</button>
+                        </div>
+                    </div>
+                    <div class="menu-content">
+                        <div class="menu-header">
+                            <h3 class="menu-name">Cinnamon Roll</h3>
+                            <span class="menu-price">$4.75</span>
+                        </div>
+                        <p class="menu-description">Warm cinnamon roll with cream cheese glaze</p>
+                        <div class="menu-tags">
+                            <span class="tag">Warm</span>
+                            <span class="tag">Sweet</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More categories would follow similar pattern -->
+            </div>
+
+            <div class="menu-cta">
+                <a href="#" class="btn-outline">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-content">
+                    <div class="section-badge">
+                        <span>🌟 Our Story</span>
+                    </div>
+                    <h2 class="about-title">More Than Just Coffee</h2>
+                    <p class="about-description">
+                        Founded in 2018 with a simple dream: to create a space where exceptional coffee meets genuine hospitality. 
+                        Every bean is carefully selected, every cup thoughtfully prepared, and every guest warmly welcomed.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">☕</div>
+                            <div class="feature-text">
+                                <h4>Artisan Roasted</h4>
+                                <p>Small-batch roasting ensures every cup is perfect</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🌱</div>
+                            <div class="feature-text">
+                                <h4>Sustainably Sourced</h4>
+                                <p>Direct trade partnerships with coffee farmers worldwide</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">👨‍🍳</div>
+                            <div class="feature-text">
+                                <h4>Fresh Daily</h4>
+                                <p>Pastries and food made fresh in-house every morning</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="#contact" class="btn-primary">Learn More About Us</a>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-grid">
+                        <div class="image-card card-1">
+                            <img src="assets/images/about/1.png" alt="Cafe Speciality" class="menu-img">
+                            <span class="image-caption">Our Barista</span>
+                        </div>
+                        <div class="image-card card-2">
+                            <img src="assets/images/about/2.png" alt="Cafe Speciality" class="menu-img">
+                            <span class="image-caption">Fresh Ingredients</span>
+                        </div>
+                        <div class="image-card card-3">
+                            <img src="assets/images/about/3.png" alt="Cafe Speciality" class="menu-img">
+                            <span class="image-caption">Cozy Interior</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>📸 Gallery</span>
+                </div>
+                <h2 class="section-title">Experience the Ambiance</h2>
+                <p class="section-subtitle">Step into our world of warmth, comfort, and exceptional coffee</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="assets/images/gallery/1.png" alt="Cafe Speciality" class="menu-img">
+                    <div class="gallery-overlay">
+                        <h3>Our Cozy Interior</h3>
+                        <p>Perfect spot for work or relaxation</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery/2.png" alt="Cafe Speciality" class="menu-img">
+                    <div class="gallery-overlay">
+                        <h3>Latte Art</h3>
+                        <p>Masterfully crafted</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery/3.png" alt="Cafe Speciality" class="menu-img">
+                    <div class="gallery-overlay">
+                        <h3>Fresh Pastries</h3>
+                        <p>Baked daily</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery/4.png" alt="Cafe Speciality" class="menu-img">
+                    <div class="gallery-overlay">
+                        <h3>Green Corner</h3>
+                        <p>Nature indoors</p>
+                    </div>
+                </div>
+                <div class="gallery-item tall">
+                    <img src="assets/images/gallery/5.png" alt="Cafe Speciality" class="menu-img">
+                    <div class="gallery-overlay">
+                        <h3>Reading Nook</h3>
+                        <p>Books & Coffee</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/gallery/6.png" alt="Cafe Speciality" class="menu-img">
+                    <div class="gallery-overlay">
+                        <h3>Community</h3>
+                        <p>Friends & conversations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation/Contact Section -->
+    <section class="reservation" id="reservation">
+        <div class="container">
+            <div class="reservation-container">
+                <div class="reservation-content">
+                    <div class="section-badge">
+                        <span>📅 Reserve</span>
+                    </div>
+                    <h2 class="reservation-title">Secure Your Spot</h2>
+                    <p class="reservation-description">
+                        Book your table for a guaranteed cozy corner, perfect for work, dates, or catching up with friends.
+                    </p>
+                    
+                    <form class="reservation-form" id="reservationForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Time</label>
+                                <select id="time" name="time" required>
+                                    <option value="">Select Time</option>
+                                    <option value="7:00">7:00 AM</option>
+                                    <option value="8:00">8:00 AM</option>
+                                    <option value="9:00">9:00 AM</option>
+                                    <option value="10:00">10:00 AM</option>
+                                    <option value="11:00">11:00 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="14:00">2:00 PM</option>
+                                    <option value="15:00">3:00 PM</option>
+                                    <option value="16:00">4:00 PM</option>
+                                    <option value="17:00">5:00 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guests">Number of Guests</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Select Guests</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6+ People</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="occasion">Occasion (Optional)</label>
+                                <select id="occasion" name="occasion">
+                                    <option value="">Select Occasion</option>
+                                    <option value="casual">Casual Visit</option>
+                                    <option value="business">Business Meeting</option>
+                                    <option value="date">Date</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="special-requests">Special Requests</label>
+                            <textarea id="special-requests" name="special-requests" rows="3" placeholder="Any dietary restrictions, preferred seating, or special arrangements..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary reservation-submit">
+                            <span>Reserve Table</span>
+                            <span class="btn-icon">📅</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="reservation-visual">
+                    <div class="hours-card">
+                        <h3>Opening Hours</h3>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span>Monday - Friday</span>
+                                <span>7:00 AM - 8:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span>Saturday - Sunday</span>
+                                <span>8:00 AM - 9:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <span class="contact-icon">📍</span>
+                                <span>123 Coffee Street, Bean District, Coffee City 12345</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">📞</span>
+                                <span>(555) 123-BREW</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-icon">✉️</span>
+                                <span>hello@brewandbliss.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-content">
+                    <div class="section-badge">
+                        <span>💌 Get in Touch</span>
+                    </div>
+                    <h2 class="contact-title">We'd Love to Hear From You</h2>
+                    <p class="contact-description">
+                        Questions, feedback, or just want to chat about coffee? Drop us a message and we'll get back to you faster than you can say "espresso"!
+                    </p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Name</label>
+                                <input type="text" id="contact-name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Email</label>
+                                <input type="email" id="contact-email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary contact-submit">
+                            <span>Send Message</span>
+                            <span class="btn-icon">✈️</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <div class="map-pin">📍</div>
+                        <p>123 Coffee Street<br>Bean District, Coffee City 12345</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">☕</div>
+                        <span class="logo-text">Brew & Bliss</span>
+                    </div>
+                    <p class="footer-description">
+                        Where exceptional coffee meets genuine hospitality. Every cup tells a story, every visit creates a memory.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📸</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">🎵</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#reservation">Reservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">Coffee Catering</a></li>
+                        <li><a href="#">Private Events</a></li>
+                        <li><a href="#">Coffee Subscriptions</a></li>
+                        <li><a href="#">Barista Training</a></li>
+                        <li><a href="#">Corporate Orders</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Visit Us</h4>
+                    <div class="footer-contact-info">
+                        <p>📍 123 Coffee Street<br>Bean District, Coffee City 12345</p>
+                        <p>📞 (555) 123-BREW</p>
+                        <p>✉️ hello@brewandbliss.com</p>
+                    </div>
+                    <div class="newsletter">
+                        <h5>Stay Caffeinated</h5>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Brew & Bliss. All rights reserved. Made with ☕ and lots of ❤️</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
