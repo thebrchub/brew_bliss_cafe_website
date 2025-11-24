@@ -182,7 +182,7 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 110vh;
+    min-height: 115vh;
     display: flex;
     align-items: center;
     position: relative;
@@ -1038,7 +1038,7 @@ body {
 
 /* Contact Section */
 .contact {
-    padding: 8rem 0;
+    padding: 6rem 0;
     background: var(--cream);
 }
 
